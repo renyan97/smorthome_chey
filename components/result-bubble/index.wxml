@@ -1,0 +1,23 @@
+<view class="bubble-wrap" bindlongpress="showModal" >
+  <view class="modal-wrap" wx:if="{{recordStatus == 2}}">
+    <modal modal-show="{{modalShow}}"
+      index="{{index}}"
+      item="{{item}}"
+      bindmodalleave="modalLeave"></modal>
+  </view>
+
+  <view class="create-time">{{item.create}}</view>
+  
+  <view class="section-body" data-index="{{index}}" >
+    <view class="send-message">
+
+      <view data-id="{{item.id}}"  class="text-content"  data-index="{{index}}" >
+
+        <view class="text-detail  text-detail-{{item.lfrom}}" >{{item.text}}<waiting-icon wx:if="{{recordStatus == 0}}"></waiting-icon></view>
+      </view>
+   
+    </view>
+     
+</view>
+
+</view>

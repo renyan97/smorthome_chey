@@ -1,0 +1,70 @@
+/* pages/kongzhi/kongzhi.wxss */
+page
+{
+  height: 100%;
+  background-color: rgb(34, 133, 172);
+}
+.r1
+{
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  height: 200rpx;
+  width: 380rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.r2
+{
+  font-size: 70rpx;
+  color: white;
+}
+.r3
+{
+  margin-top: 25rpx;
+  width: 340rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+.r4
+{
+  height: 220rpx;
+  width: 220rpx;
+}
+.r5
+{
+  display: flex;
+  flex-direction: row;
+}
+.r6
+{
+  width: 600rpx;
+  height: 10rpx;
+  margin-left: 75rpx;
+  border: 1rpx;
+  border-bottom:5rpx solid white; 
+}
+.r7
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.r8
+{
+  height: 250rpx;
+  width: 250rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.r9
+{
+  height: 150rpx;
+  width: 150rpx;
+}

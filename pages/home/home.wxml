@@ -1,0 +1,144 @@
+ <view class='qingchen' style='background-image: url({{beijing[index]}})'>
+       <image class='r15' src='/images/dizhi.png'></image>
+       <text class='r1'>{{weather.results[0].currentCity}}</text>
+
+  <view class='r3'>
+
+        <view class='r2'>
+              <text class='r5'>室外环境:</text>
+              <view class='r6'>
+              <image class='r16' src='/images/shishi.png'></image>
+                   <text class='r5'>{{weather.results[0].weather_data[0].date}}</text>
+              </view>
+              <view>
+              <image class='r14' src='/images/PM25.png'></image>
+                      <text  class='r5'>pm2.5:</text>
+                      <text  class='r5'>{{weather.results[0].pm25}}</text>
+              </view>
+                <view>
+                <image class='r14' src='/images/tianqi.png'></image>
+                      <text  class='r5'>天气:</text>
+                      <text  class='r5'>{{weather.results[0].weather_data[0].weather}}</text>
+              </view>
+               <view>
+               <image class='r14' src='/images/feng.png'></image>
+                      <text  class='r5'>风力:</text>
+                      <text  class='r5'>{{weather.results[0].weather_data[0].wind}}</text>
+                       </view>
+                        <view>
+                        <image class='r14' src='/images/wendu.png'></image>
+                      <text  class='r5'>温度:</text>
+                      <text  class='r5'>{{weather.results[0].weather_data[0].temperature}}</text>
+              </view>
+        </view>
+
+        <view class='r4'>
+               <text  class='r5'>室内环境:</text>
+                       <view class='r17'>
+                        <image class='r14' src='/images/remin.png'></image>
+                        <text  class='r5'>热敏:</text>
+               <view wx:if='{{list.data[list.data.length-1].remin>500}}'>
+                       <text class='r20' >正常</text>
+                </view>
+                       <view wx:if='{{list.data[list.data.length-1].remin<500}}'>
+                       <text class='r21'>警报</text>
+                       </view>  
+              </view>
+                      <view class='r17'>
+                        <image class='r14' src='/images/huoyan.png'></image>
+                      <text  class='r5'>火焰:</text>
+                       <view wx:if='{{list.data[list.data.length-1].huoyan>500}}'>
+                       <text class='r20' >正常</text>
+                </view>
+                       <view wx:if='{{list.data[list.data.length-1].huoyan<500}}'>
+                       <text class='r21'>警报</text>
+                       </view>  
+              </view>
+                <view class='r17'>
+              <image class='r14' src='/images/tianranqi.png'></image>
+                   <text class='r5'>天然气：</text>
+                    <view wx:if='{{list.data[list.data.length-1].tianranqi<180}}'>
+                       <text class='r20' >正常</text>
+                </view>
+                       <view wx:if='{{list.data[list.data.length-1].tianranqi>180}}'>
+                       <text class='r21'>警报</text>
+                       </view>  
+              </view>
+              <view class='r17'>
+              <image class='r14' src='/images/yiyang.png'></image>
+                      <text  class='r5'>一氧化碳：</text>
+                       <view wx:if='{{list.data[list.data.length-1].yiyang<280}}'>
+                       <text class='r20' >正常</text>
+                </view>
+                       <view wx:if='{{list.data[list.data.length-1].yiyang>280}}'>
+                       <text class='r21'>警报</text>
+                       </view>  
+              </view>
+                <view class='r17'>
+                <image class='r14' src='/images/wendu3.png'></image>
+                      <text  class='r5'>温度：</text>
+                     
+                       <text class='r20' >{{list.data[list.data.length-1].wendu}}℃</text>
+              </view>
+               <view class='r17'>
+               <image class='r14' src='/images/shidu.png'></image>
+                      <text  class='r5'>湿度:</text> 
+                       <text class='r20' >{{list.data[list.data.length-1].shidu}}%</text>
+                       </view>
+                        <view>
+                        <image class='r14' src='/images/guangzhao.png'></image>
+                      <text  class='r5'>光照强度:</text>
+                                     
+                       <text class='r20' >{{list.data[list.data.length-1].guangzhao}}</text>
+              </view>
+                       <view >
+                        <image class='r14' src='/images/time.png'></image>
+                      <text  class='r5'>更新时间:</text>
+                                      
+                       <text class='r20' >{{list.data[list.data.length-1].time}}</text>
+              </view>
+                    <view class='r17' bindtap='flishi'>
+                        <image class='r14' src='/images/lishi.png'></image>
+                      <text  class='r5'>历史数据</text>
+                       
+              </view>
+        </view>
+  </view>
+
+
+
+
+<view class='r7'>
+       <text class='r8'>生活指数</text>
+       <view class='r9'> 
+             <view class='r10'>
+                <image class='r13' src='/images/chuanyi.png'></image>
+                <text class='r11'>{{weather.results[0].index[0].zs}}</text>
+                <text class='r12'>{{weather.results[0].index[0].tipt}}</text>
+             </view>
+           <view class='r10'>
+                <image class='r13' src='/images/yundong.png'></image>
+                <text class='r11'>{{weather.results[0].index[2].zs}}</text>
+                <text class='r12'>{{weather.results[0].index[2].tipt}}</text>
+             </view>
+           <view class='r10'>
+                <image class='r13' src='/images/ganmao.png'></image>
+               <text class='r11'>{{weather.results[0].index[3].zs}}</text>
+                <text class='r12'>{{weather.results[0].index[3].tipt}}</text>
+             </view>
+           <view class='r10'>
+                <image class='r13' src='/images/ziwaixian.png'></image>
+               <text class='r11'>{{weather.results[0].index[4].zs}}</text>
+                <text class='r12'>{{weather.results[0].index[4].tipt}}</text>
+            </view>
+
+       </view>
+       
+</view>
+ 
+ </view>
+
+
+   
+ 
+ 

@@ -1,0 +1,41 @@
+/* pages/lishi/lishi.wxss */
+.r1
+{
+  display: flex;
+  flex-direction: row;
+}
+.r3
+{
+  width: 150rpx;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.r2
+{
+  width: 80rpx;
+   font-size: 30rpx;
+}
+.r4
+{
+  width: 80rpx;
+   font-size: 30rpx;
+}
+.r5
+{
+  width: 80rpx;
+   font-size: 30rpx;
+}
+.r6
+{
+  font-size: 20rpx;
+}
+.r7{
+  width: 80rpx;
+  color:red;
+  font-size: 30rpx; 
+}
+.r8{
+  width: 80rpx;
+  color:green;
+  font-size: 30rpx; 
+}

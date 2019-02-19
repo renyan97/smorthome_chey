@@ -1,0 +1,50 @@
+<view class='r5'> 
+<view class='r1'>
+   <text class='r2'>SMART</text>
+   <text class='r2'>HOME</text>
+</view>
+
+<view class='r3'>
+     <image src='/images/home.png' class='r4'></image>
+</view>
+</view>
+<view class='r6'></view>
+  
+<view class='r7'>
+      <view class='r8' bindtap='f1'>
+              <image src='{{dengpao[dengpao_index]}}' class='r9'></image>
+      </view>
+        <view class='r8' bindtap='f2'>
+              <image src='{{woshi[woshi_index]}}' class='r9'></image>
+      </view>
+        <view class='r8' bindtap='f3'>
+              <image src='{{chufang[chufang_index]}}' class='r9'></image>
+      </view>
+        <view class='r8' bindtap='f4'>
+              <image src='{{yushi[yushi_index]}}' class='r9'></image>
+      </view>
+        <view class='r8' bindtap='f5'>
+              <image src='{{penzai[penzai_index]}}' class='r9'></image>
+      </view> 
+       <view class='r8' bindtap='f6'>
+              <image src='{{lanya[lanya_index]}}' class='r9'></image>
+      </view>
+      <view class='r8' bindtap='f7'>
+              <image src='{{caideng[caideng_index]}}' class='r9'></image>
+      </view>
+     <view class='r8' bindtap='f8'>
+              <image src='{{yinyue[yinyue_index]}}' class='r9'></image>
+      </view>
+       <view class='r8' bindtap='f9'>
+              <image src='{{chuanglian[chuanglian_index]}}' class='r9'></image>
+      </view>
+      <view class='r8' bindtap='f10'>
+              <image src='{{fengshan[fengshan_index]}}' class='r9'></image>
+      </view>
+      <view class='r8' bindtap='f11'>
+              <image src='{{kongtiao[kongtiao_index]}}' class='r9'></image>
+      </view>
+      <view class='r8' bindtap='f12'>
+              <image src='{{deng[deng_index]}}' class='r9'></image>
+      </view>
+</view>

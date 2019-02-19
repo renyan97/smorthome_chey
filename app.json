@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/edit/edit",
+    "pages/kongzhi/kongzhi",
+    "pages/lanya/lanya",
+    "pages/lishi/lishi"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/shouye1.png",
+        "selectedIconPath": "/images/shouye2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "语音控制",
+        "iconPath": "/images/yuyin1.png",
+        "selectedIconPath": "/images/yuyin2.png"
+      },
+      {
+        "pagePath": "pages/kongzhi/kongzhi",
+        "text": "手动控制",
+        "iconPath": "/images/kongzhi1.png",
+        "selectedIconPath": "/images/kongzhi2.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundcolor": "#2285AC",
+    "navigationBarBackgroundColor": "#2285AC",
+    "navigationBarTitleText": "CHey助手",
+    "navigationBarTextStyle": "white"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.0.6",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "debug": true
+}

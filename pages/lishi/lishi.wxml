@@ -1,0 +1,44 @@
+<view class='r1'>
+       <view class='r3'>时间</view>
+       <view class='r2'>煤气</view>
+       <view class='r2'>天然</view>
+       <view class='r2'>热敏</view>
+       <view class='r2'>火焰</view>
+       <view class='r4'>温度</view>
+       <view class='r4'>湿度</view>
+       <view class='r5'>光照</view>
+</view>
+
+<view wx:for='{{list.data}}' class='r1'>
+       <view class='r3'>{{item.time}}</view>
+
+       <view class='r2' wx:if='{{item.yiyang>280}}'>
+             <text class='r8'>正常</text>
+       </view>
+         <view class='r2' wx:if='{{item.yiyang<280}}'>
+             <text class='r7'>警报</text>
+       </view>
+       
+
+       <view class='r2' wx:if='{{item.tianranqi>180}}'>
+             <text class='r8'>正常</text>
+       </view>
+         <view class='r2' wx:if='{{item.tianranqi<180}}'>
+             <text class='r7'>警报</text>
+       </view>
+        <view class='r2' wx:if='{{item.huoyan>500}}'>
+             <text class='r8'>正常</text>
+       </view>
+         <view class='r2' wx:if='{{item.huoyan<500}}'>
+             <text class='r7'>警报</text>
+       </view>
+       <view class='r2' wx:if='{{item.remin>500}}'>
+             <text class='r8'>正常</text>
+       </view>
+         <view class='r2' wx:if='{{item.remin<500}}'>
+             <text class='r7'>警报</text>
+       </view>
+       <view class='r4'>{{item.wendu}}℃</view>
+       <view class='r4'>{{item.shidu}}%</view>
+       <view class='r5'>{{item.guangzhao}}mv</view>
+</view>
